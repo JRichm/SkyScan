@@ -10,6 +10,7 @@ app.secret_key = 'dummdumm'
 def home_page():
     return render_template('index.html')
 
+        ##  Server Methods  ##
 if __name__ == '__main__':
     app.env = 'development'
     app.run(debug=True, port=8565, host='localhost')
