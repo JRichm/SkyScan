@@ -10,6 +10,10 @@ app.secret_key = 'dummdumm'
 def home_page():
     return render_template('index.html')
 
+@app.route('/searchCity/<cityName>', methods=['GET'])
+def search_cities(city_name):
+    return render_template('index.html')
+
         ##  Server Methods  ##
 if __name__ == '__main__':
     app.env = 'development'
